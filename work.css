@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    background-color: #f7f5ef;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color:#2C2D48;
+}
+.header {
+    background-color: #F8F5EF;
+}
+.humberger {
+    margin:0 0 0 auto;
+    width: 30px;
+    padding-right: 50px;
+}
+.drawer_hidden {
+    display: none;
+}
+#open {
+    font-size: 48px;
+    line-height: 64px;
+    cursor: pointer;
+    position: fixed;
+    color: #2C2D48;
+}
+#open.hide {
+    display: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(248, 245, 239,1);
+    text-align: center;
+    padding:64px ;
+    font-size: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    z-index:100 ;
+}
+.overlay #close {
+    position: absolute;
+    top: 10px;
+    right: 32px;
+    font-size: 48px;
+    cursor: pointer;
+    color: #2C2D48;
+}
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.overlay li {
+    margin-top: 24px;
+    padding-bottom: 32px;
+    transform: translateY(16px);
+    transition: opacity .3s, transform .3s;
+}
+.overlay a{
+    position: relative;
+    display: inline-block;
+    color: #2C2D48;
+}
+.overlay a::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #F6C774;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.overlay a:hover::after {
+    transform: scale(1, 1);
+}
+li {
+    list-style-type: none;
+}
+.title {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+}
+.title img {
+    margin-bottom: 32px;
+}
+.title h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.btn1 {
+    position: fixed;
+    top:300px;
+    left:48px;
+}
+.btn2 {
+    position: fixed;
+    top:300px;
+    right:48px;
+}
+.btn1:hover {
+    opacity: 0.7;
+}
+.btn2:hover {
+    opacity: 0.7;
+}
+.png {
+    margin-bottom: 64px;
+}
+.png img {
+    width: 70%;
+    display: block;
+    margin:auto;
+}
+.detail {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.6;
+    letter-spacing: 0.15em;
+}
+.detail th {
+    width: 25%;
+    padding-right: 72px;
+    color: #a9a9a9;
+    text-align: left;
+}
+.detail td {
+    word-wrap: break-word;
+    padding-bottom: 32px;
+}
+.works-btn {
+    display: none;
+}
+/*------------------------------
+レスポンシブ
+------------------------------*/
+@media screen and (max-width: 600px) {
+    #open {
+        right: 10px;
+    }
+    .overlay #close {
+        right: 10px;
+    }
+    .title h1{
+        font-size: 15px;
+    }
+    .btn1, .btn2 {
+        display: none;
+    }
+    .png img {
+        width: 95%;
+    }
+    .detail {
+        width: 95%;
+        font-size: 15px;
+    }
+    .detail th {
+        padding-right: 8px;
+        width: 30%;
+    }
+    .works-btn {
+        display: block;
+        width: 70px;
+        margin:0 5px 40px auto ;
+    }
+    .next {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color:#F6C774;
+        text-decoration-thickness: 3px; 
+    }
+}
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}

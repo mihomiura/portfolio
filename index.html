@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <tittle></tittle>
+        <link rel="stylesheet" href="style.css">
+        <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+        <script type="text/javascript"src="//code.typesquare.com/static/ZDbTe4IzCko%253D/ts106f.js"charset="utf-8"></script>
+        <script src="anime.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <!--ハンバーガーメニュー-->
+            <div class="humberger">
+                <span class="material-icons" id="open">menu</span>
+            
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" id="nav-close" type="checkbox">
+
+                <div class="overlay">
+                    <span class="material-icons"  id="close">close</span>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#about">ABOUT ME</a></li>
+                            <li><a href="#works">WORKS</a></li>
+                            <li><a href="#skill">SKILL</a></li>
+                            <li><a href="#strength">STRENGTH</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>  
+        </header>
+
+        <!-- ローディング画面 -->
+        <div id="loading">
+            <div class="inside">
+                <p class="inside-p">PORTFOLIO</p>
+                <img id="loimg" src="img/cat.png" alt="anime">
+            </div>
+            
+        </div>
+  
+        <div class="keyvisual">
+            <h1>PORTFOLIO</h1>
+            <h2>By Miho Miura</h2>
+            <img src="img/keyvisual.png">
+        </div>
+
+        <div class="wrapper">
+            <!--aboutセクション-->
+            <section id="about" class="elm1">
+                <div class="section-title">
+                    <img src="img/about.svg" alt="タイトル">
+                </div>
+
+                <div class="about-content">
+                    <img src="img/image190.png" alt="プロフィール画像" class="about-img">
+                    <p>北海道で生まれ育ち、就職と共に神奈川へ引っ越しました。<br>
+                        前職はシステム開発の会社で、中古車販売サイトの保守運用を行なっていました。<br>
+                        現在は自社の勉強会などでウェブデザインを勉強しています。</p>
+                </div>
+            </section>
+
+            <!--worksセクション-->
+            <section id="works" class="elm2">
+                <div class="section-title">
+                    <img src="img/works.svg" alt="タイトル">
+                </div>
+                <ul class="works-link">
+                    <li class="zoomInText">
+                        <a href="work1.html"><span class="mask"><img src="img/works1.png"></a>
+                        <span class="cap"><p>小売店</p></span></span>
+                    </li>
+                    <li class="zoomInText">
+                        <a href="work2.html"><span class="mask"><img src="img/works2.png"></a>
+                        <span class="cap"><p>ブックカフェ</p></span></span>
+                    </li>
+                    <li class="zoomInText">
+                        <a href="work3.html"><span class="mask"><img src="img/works3.png"></a>
+                        <span class="cap"><p>企業の採用サイト</p></span></span>
+                    </li>
+                </ul>
+            </section>
+
+            <!--skillセクション-->
+            <section id="skill" class="elm3">
+                <div class="section-title">
+                    <img src="img/skill.svg" alt="タイトル">
+                </div>
+                <div class="skill">
+                    <table class="skill-table">
+                        <tr>
+                            <th class="th-first">デザイン</th>
+                            <td>・Photoshop</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>・illustrator</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>・Xd</td>
+                        </tr>
+                        <tr>
+                            <th>コーディング</th>
+                            <td class="td-first">・HTML</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>・CSS</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>・JavaScript</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>・Java</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td class="td-last">・PHP</td>
+                        </tr>
+                     </dl>
+                    </table>
+                </div>
+            </section>
+
+            <!--strenthセクション-->
+            <section id="strength" class="elm4">
+                <img class="pc" src="img/strenght_pc.svg">
+                <img class="phone" src="img/strenght_s.svg">
+            </section>
+
+            <!--contactセクション-->
+            <section id="contact" class="elm5">
+                <div class="section-title">
+                    <img src="img/contact.svg" alt="タイトル">
+                </div>
+                <dl class="dl-list">
+                    <dt>Full Name<span>*</span></dt>
+                    <dd><input type="text" name="name" placeholder="Your Name"></dd>
+                    <dt>Email<span>*</span></dt>
+                    <dd><input type="text" name="mail" placeholder="Email Address"></dd>
+                    <dt>Message<span>*</span></dt>
+                    <dd><textarea placeholder="Put message here"></textarea></dd>
+                </dl>
+                <div class="btn" >
+                    <a href="#contact" onClick="disp()">send</a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="p-center">
+                    <p>&#9400; Miho Miura</p>
+                </div>
+                
+            </footer>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
